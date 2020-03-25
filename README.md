@@ -10,7 +10,9 @@ Description:
 •	What it will do is it will transmit a .wav (audio file of our choice) on a frequency of our choice I will do it on 100 MHz.
 
 Software:
+
 •	Raspberry pie 3 OS Kali Linux
+
 •	Terminal
 
 Components Required:
@@ -18,11 +20,17 @@ Components Required:
 
 •	Raspberry Pi 3
  
+
 •	VGA OR HDMI cable for output to LCD monitor
+
 •	LCD Monitor
+
 •	Keyboard 
+
 •	Mouse
+
 •	SD Card at least 16GB
+
 •	Earphone for mobile to play FM
 
 
