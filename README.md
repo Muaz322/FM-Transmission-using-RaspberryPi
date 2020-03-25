@@ -28,6 +28,7 @@ Components Required:
 
 Procedure:
 1.	Setup your raspberry Pi connect the VGA/HDMI cable into your LCD monitor and power it up. 
+
 •	If you see this image it means you have kali linux installed
 
 
@@ -42,22 +43,27 @@ Procedure:
  
 
 
-3.	If you are using Raspbian OS first you need to install sndfile library by entering the command sudo apt-get install libsndfile1-dev.
+3.	If you are using Raspbian OS first you need to install sndfile library by entering the command 
+sudo apt-get install libsndfile1-dev.
 
 4.	If you are using Kali linux it should have rpi-mailbox the August 2015 release already have this library built in.
 
 5.	Now first make a directory by the name PI_FM and change your directory to it
+		
 		mkdir PI_FM
-    cd PI_FM
+   		 cd PI_FM
 
 
 6.	Now we clone the files from the github using the following code
+
 sudo git clone https://github.com/markondej/fm_transmitter
 
 7.	The downloaded files are C code so you need a compiler type this
+
 sudo apt-get install gcc g++ make
 
 8.	Now change your directory to fm_transmitter and compile code using 
+
 cd fm_transmitter
 sudo make
 
@@ -69,6 +75,7 @@ sudo ./fm_transmitter -f 100  -r acoustic_guitar_duet.wav
 10.	Now plug in your FM and tune in 100Mhz and you will be able to listen to this file.
 
 11.	If you get an error by playing your own .wav file saying ‘corrupted data’ try using the following command
+
 sudo apt-get install sox libsox-fmt-mp3
 sox my-audio.mp3 -r 22050 -c 1 -b 16 -t wav my-converted-audio.wav
 sudo ./fm_transmitter -f 100.6 my-converted-audio.wav 
@@ -76,6 +83,6 @@ sudo ./fm_transmitter -f 100.6 my-converted-audio.wav
 
 
 
-#For Complete description open pdf
+For Complete description open pdf
 
 
